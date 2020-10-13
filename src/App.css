@@ -6,7 +6,44 @@
 
 body {
   min-height: 100vh;
+  padding: 0 50px;
+  font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* tillfälligt nedan*/
+  padding-bottom: 60px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 3rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);;
+}
+
+#current-date {
+  text-align: center;
+}
+
+.header-right-container {
+  text-align: right;
+}
+
+.header-left-container,
+.header-right-container {
+  width: 200px;
+}
+
+/*        */
+
 
 /*.App {
   text-align: center;
