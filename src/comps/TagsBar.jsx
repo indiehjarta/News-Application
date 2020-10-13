@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+// imports outsiders
+
 //const tags = ['Global News', 'Local News', 'Business', 'Lifestyle', 'Sport', 'Weather'];
 // Check tabs in Material UI
 
