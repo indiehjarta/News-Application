@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-
-//import { FaSun, FaMoon } from "react-icons/fa";
-//import { IconContext } from "react-icons";
+import './HeaderStyling.css';
 
 class SwitchMode extends Component {
     render () {
         return (
-            /*<IconContext.Provider value={{ size: '1.8em', style: { paddingRight: '15px' } }}>
-                <FaSun />*/
-                <p>Switch btn here</p>
-                /*<FaMoon />
-            </IconContext.Provider>*/
+			<div>
+				<input type="checkbox" className="checkbox" id="chk" />
+				<label className="label" for="chk">
+					<i className="fas fa-moon"></i>
+					<i className="fas fa-sun"></i>
+					<div className="ball"></div>
+				</label>
+			</div>
         );
     };
 }
 
 export default SwitchMode;
+
+/*
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+*/ 

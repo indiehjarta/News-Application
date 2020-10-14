@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-
-import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
-import { IconContext } from "react-icons";
+import React, { Component, Fragment } from 'react';
+import './HeaderStyling.css';
 
 class SocialMedia extends Component {
     render () {
         return (
-            <IconContext.Provider value={{ size: '1.8em', style: { paddingRight: '15px' } }}>
-                <FaFacebookSquare />
-                <FaInstagram />
-                <FaTwitter />
-                <FaPinterest />
-            </IconContext.Provider>
+            <Fragment>
+                <i className="fab fa-facebook-square"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-pinterest"></i>
+            </Fragment>
         );
     };
 }
