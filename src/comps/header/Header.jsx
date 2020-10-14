@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../../App.css';
+import SearchBar from './SearchBar';
 import SocialMedia from './SocialMedia';
 import SwitchMode from './SwitchMode';
+import SelectLanguage from './SelectLanguage';
 
 // import moment from 'moment';
 
@@ -9,16 +11,27 @@ class Header extends Component {
     render () {
         return (
             <header>
-                <div className='header-left-container'>
-                    <SocialMedia />
+                <div id='header-left-container'>
+                    <div className='header-item-top-left'>
+                        <SocialMedia />
+                    </div>
                     <hr />
-                    <SwitchMode />
+                    <div className='header-item-bottom-left'>
+                        <SelectLanguage />
+                    </div>
                 </div>
-                <div className='header-center-container'>
+                <div id='header-center-container'>
                     <h1>The Newspaper</h1>
-                    <p id="current-date">– <span id="fetch-date">Tuesday 29 September 2020</span> –</p>
+                    <p id="current-date">– <span id="fetch-date">Wednesday 14 October 2020</span> –</p>
                 </div>
-                <div className='header-right-container'>
+                <div id='header-right-container'>
+                    <div className='header-item-top-right'>
+                        <SwitchMode />
+                    </div>
+                    <hr />
+                    <div className='header-item-bottom-right'>
+                        <SearchBar />
+                    </div>
                 </div>
             </header>
         );

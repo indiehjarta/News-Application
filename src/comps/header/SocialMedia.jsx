@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 class SocialMedia extends Component {
@@ -10,6 +10,7 @@ class SocialMedia extends Component {
                 <FaFacebookSquare />
                 <FaInstagram />
                 <FaTwitter />
+                <FaPinterest />
             </IconContext.Provider>
         );
     };
