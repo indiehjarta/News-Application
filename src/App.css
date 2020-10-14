@@ -15,9 +15,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  /* tillfälligt nedan*/
-  padding-bottom: 60px;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
 
 h1 {
@@ -26,20 +26,50 @@ h1 {
   text-transform: uppercase;
   color: #000;
   font-size: 3rem;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 #current-date {
+  font-size: 300;
+  text-transform: uppercase;
   text-align: center;
+  margin: 8px;
 }
 
-.header-right-container {
-  text-align: right;
-}
+/* HEADERS CONTAINERS */
 
-.header-left-container,
-.header-right-container {
+#header-left-container,
+#header-right-container {
   width: 200px;
+  height: 60px;
+}
+
+#header-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-item-top-left,
+.header-item-bottom-left,
+.header-item-top-right,
+.header-item-bottom-right {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  background-color: plum;
+}
+
+.header-item-top-right,
+.header-item-bottom-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-item-top-left,
+.header-item-bottom-left {
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*        */
