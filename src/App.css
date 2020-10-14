@@ -7,11 +7,10 @@
 body {
   min-height: 100vh;
   padding: 0 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* HEADER */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -30,50 +29,46 @@ h1 {
 }
 
 #current-date {
-  font-size: 300;
-  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   text-align: center;
+  color: #3b3b3b;
   margin: 8px;
 }
+/* END HEADER */
 
-/* HEADERS CONTAINERS */
 
-#header-left-container,
-#header-right-container {
-  width: 200px;
-  height: 60px;
-}
-
-#header-right-container {
+/* TAGS BAR */
+nav {
+  margin: 12px 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
-.header-item-top-left,
-.header-item-bottom-left,
-.header-item-top-right,
-.header-item-bottom-right {
+.tags-bar-line {
+  border: 1.5px solid #000;
+}
+
+.tags-bar-container {
   display: flex;
-  flex-direction: row;
-  height: 30px;
-  background-color: plum;
+  justify-content: center;
 }
 
-.header-item-top-right,
-.header-item-bottom-right {
-  justify-content: flex-end;
-  align-items: center;
+button {
+  position: relative;
+  border: none;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
 }
 
-.header-item-top-left,
-.header-item-bottom-left {
-  justify-content: flex-start;
-  align-items: center;
+.tag-btn {
+  padding: 14px;
+  width: 140px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
-/*        */
-
 
 /*.App {
   text-align: center;

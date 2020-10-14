@@ -15,7 +15,7 @@ class Header extends Component {
                     <div className='header-item-top-left'>
                         <SocialMedia />
                     </div>
-                    <hr />
+                    <hr className='header-line'/>
                     <div className='header-item-bottom-left'>
                         <SelectLanguage />
                     </div>
@@ -28,7 +28,7 @@ class Header extends Component {
                     <div className='header-item-top-right'>
                         <SwitchMode />
                     </div>
-                    <hr />
+                    <hr className='header-line'/>
                     <div className='header-item-bottom-right'>
                         <SearchBar />
                     </div>

@@ -1,0 +1,79 @@
+/* CSS FOR HEADERS 'SIDEBARS' */
+
+#header-left-container,
+#header-right-container {
+  width: 200px;
+  height: 60px;
+}
+
+#header-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-item-top-left,
+.header-item-bottom-left,
+.header-item-top-right,
+.header-item-bottom-right {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+.header-item-top-right,
+.header-item-bottom-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-item-top-left,
+.header-item-bottom-left {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fab {
+  padding-right: 24px;
+}
+
+/* SWITCH MODE TOGGLER */
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.fa-moon, 
+.fa-sun {
+	color: #fff;
+}
