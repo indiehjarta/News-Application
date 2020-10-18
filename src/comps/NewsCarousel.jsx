@@ -1,11 +1,13 @@
-/*import React from 'react';
+import React from 'react';
+import '../App.css';
 
 const NewsCarousel = () => {
+
     return (
         <div>
-            
+
         </div>
-    )
+    );
 }
 
-export default NewsCarousel;*/
+export default NewsCarousel;

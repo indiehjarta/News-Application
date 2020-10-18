@@ -11,12 +11,12 @@ class TagsBar extends Component {
             <nav>
                 <hr className='tags-bar-line'/>
                 <div className='tags-bar-container'>
-                    <button className='tag-btn'>Global News</button>
-                    <button className='tag-btn'>Local News</button>
-                    <button className='tag-btn'>Business</button>
-                    <button className='tag-btn'>Lifestyle</button>
-                    <button className='tag-btn'>Sport</button>
-                    <button className='tag-btn'>Weather</button>
+                    <button className='tag-btn'><span>Global News</span></button>
+                    <button className='tag-btn'><span>Local News</span></button>
+                    <button className='tag-btn'><span>Business</span></button>
+                    <button className='tag-btn'><span>Lifestyle</span></button>
+                    <button className='tag-btn'><span>Sport</span></button>
+                    <button className='tag-btn'><span>Weather</span></button>
                 </div>
                 <hr className='tags-bar-line'/>
             </nav>
