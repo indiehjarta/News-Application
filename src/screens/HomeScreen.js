@@ -4,14 +4,17 @@ import React, { Component, Fragment } from 'react';
 import Header from '../comps/header/Header';
 import TagsBar from '../comps/TagsBar';
 //import NewsCarousel from '../comps/NewsCarousel';
-//import NewsCard from '../comps/NewsCard';
+import NewsCard from '../comps/NewsCard';
 
 class HomeScreen extends Component {
     render () {
         return (
             <Fragment>
                 <Header />
-                <TagsBar />
+                <main>
+                    <TagsBar />
+                    <NewsCard />
+                </main>
             </Fragment>
         );
     }
