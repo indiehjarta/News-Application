@@ -1,37 +1,31 @@
 import React, { Component } from 'react';
-import '../../App.css';
+import './HeaderStyling.css';
 import SearchBar from './SearchBar';
 import SocialMedia from './SocialMedia';
 import SwitchMode from './SwitchMode';
-import SelectLanguage from './SelectLanguage';
+//import SelectLanguage from './SelectLanguage';
 
-// import moment from 'moment';
+// import day
+import DayJS from 'react-dayjs';
 
 class Header extends Component {
     render () {
         return (
             <header>
-                <div id='header-left-container'>
-                    <div className='header-item-top-left'>
+                <div className='top-header'>
+                    <div className='top-items-left'>
                         <SocialMedia />
                     </div>
-                    <hr className='header-line'/>
-                    <div className='header-item-bottom-left'>
-                        <SelectLanguage />
+                    <div className='top-item-center'>
+                        <p id="current-date">– <DayJS date={ "" } format={"dddd D MMMM YYYY"}/> –</p>
                     </div>
-                </div>
-                <div id='header-center-container'>
-                    <h1>The Newspaper</h1>
-                    <p id="current-date">– <span id="fetch-date">Wednesday 14 October 2020</span> –</p>
-                </div>
-                <div id='header-right-container'>
-                    <div className='header-item-top-right'>
+                    <div className='top-items-right'>
+                        <SearchBar />
                         <SwitchMode />
                     </div>
-                    <hr className='header-line'/>
-                    <div className='header-item-bottom-right'>
-                        <SearchBar />
-                    </div>
+                </div>
+                <div className='bottom-header'>
+                    <h1>The Newspaper</h1>
                 </div>
             </header>
         );

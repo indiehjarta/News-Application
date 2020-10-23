@@ -6,36 +6,13 @@
 
 body {
   min-height: 100vh;
-  padding: 0 50px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #F3F3F3;
 }
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100px;
+main { 
+  margin: 0 50px;
 }
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 3rem;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-#current-date {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  color: #3b3b3b;
-  margin: 8px;
-}
-/* END HEADER */
 
 
 /* TAGS BAR */
@@ -95,17 +72,22 @@ button {
 
 /* CAROUSEL */
 
-/*.App {
-  text-align: center;
+
+/* NEWS CARDS */
+
+.cards-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}*/
+.card {
+  box-shadow: 0 16px 24px 2px rgba(0,29,63,0.14);
+  width: 255px;
+  height: 390px;
+  margin: 30px;
+}
+
+img {
+  width: 100%;
+}
