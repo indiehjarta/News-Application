@@ -30,8 +30,7 @@
 	justify-content: center;
 }
 
-.fab, 
-.fas {
+.fab {
   	padding-right: 24px;
   	font-size: large;
 }
@@ -48,6 +47,7 @@
 .bottom-header {
 	display: flex;
 	justify-content: center;
+	margin: 16px 0;
 }
 
 h1 {
@@ -58,3 +58,42 @@ h1 {
 	font-size: 3rem;
 	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* SEARCH BAR */
+
+.search-container {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 24px;
+}
+
+input {
+	border: none;
+	background: none;
+	border-bottom: 1px solid #fff;
+}
+
+/*
+.search-container {
+	width: 180px;
+	margin: 0 24px;
+	padding: 3px;
+	border-radius: 16px;
+	background-color: #ddd;
+}
+
+.search-btn {
+	float: right;
+	margin-right: 10px;
+}
+
+input {
+	display: flex;
+	justify-self: start;
+	width: 130px;
+	height: 100%;
+	margin: 0 10px;
+	border: none;
+	background: none;
+} 
+*/
