@@ -13,7 +13,7 @@ class SwitchMode extends Component {
 					<div className="ball"></div>
 				</label>
 			</div>*/
-			<DarkModeToggle size={40}/>
+			<DarkModeToggle size={58}/>
         );
     };
 }

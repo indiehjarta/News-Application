@@ -10,6 +10,7 @@ class NewsCard extends Component {
                 <Card>Ett</Card>
                 <Card>Två</Card>
                 <Card>Tre</Card>
+                <Card>Fyra</Card>
             </Fragment>
         );
     }
