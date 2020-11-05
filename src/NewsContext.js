@@ -21,4 +21,4 @@ export const NewsContextProvider = (props) => {
             {props.children}
         </NewsContext.Provider>
     )
-}
+};
