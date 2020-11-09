@@ -99,6 +99,13 @@ img {
 
 /* ARTICLE */
 
+.newspaper {
+  column-count: 2;
+  column-gap: 100px;
+  column-fill: balance;
+  margin: 40px 0;
+}
+
 .heading {
   display: flex;
   flex-direction: column;
@@ -137,17 +144,18 @@ h2 {
   font-weight: 500;
 }
 
+i {
+  color: #999;
+}
+
 .small-hr {
   border: 1px solid rgb(150, 150, 150);
   width: 100%;
   margin: 40px 0;
 }
 
-.newspaper {
-  column-count: 2;
-  column-gap: 100px;
-  column-fill: balance;
-  margin: 40px 0;
+.article-text { 
+  font-size: 1em;
 }
 
 .bottom-hr {

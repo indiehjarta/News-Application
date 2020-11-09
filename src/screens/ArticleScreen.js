@@ -29,7 +29,7 @@ class ArticleScreen extends Component {
                             <hr className='small-hr' />
                         </div>
                         <div className='article'>
-                            <p>
+                            <p className='article-text'>
                             In dignissim volutpat eleifend. Nunc quam nisl, aliquet in pellentesque et, dapibus in lacus. 
                             Praesent tempus erat non augue faucibus auctor eget vel ex. Donec ut leo consequat, elementum ante id, 
                             maximus magna. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
