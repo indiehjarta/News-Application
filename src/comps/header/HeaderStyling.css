@@ -42,6 +42,11 @@
 	color: #fff;
 }
 
+.fab,
+.fas {
+	cursor: pointer;
+}
+
 /* BOTTOM HEADER */
 
 .bottom-header {
