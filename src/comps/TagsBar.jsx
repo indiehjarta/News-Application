@@ -10,7 +10,7 @@ class TagsBar extends Component {
     render () {
         return (
             <nav>
-                <hr className='tags-bar-line'/>
+                <hr />
                 <div className='tags-bar-container'>
                     <button className='tag-btn'><span>Global News</span></button>
                     <button className='tag-btn'><span>Local News</span></button>
@@ -19,7 +19,7 @@ class TagsBar extends Component {
                     <button className='tag-btn'><span>Sport</span></button>
                     <button className='tag-btn'><span>Weather</span></button>
                 </div>
-                <hr className='tags-bar-line'/>
+                <hr />
             </nav>
         );
     }

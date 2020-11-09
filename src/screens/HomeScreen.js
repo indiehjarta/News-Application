@@ -9,6 +9,9 @@ class HomeScreen extends Component {
         return (
             <Fragment>
                 <Header />
+                <div className='bottom-header'>
+                    <h1>The Newspaper</h1>
+                </div>
                 <main>
                     <TagsBar />
                 </main>
