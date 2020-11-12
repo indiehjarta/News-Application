@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 // imports components
 import Header from '../comps/header/Header';
-import TagsBar from '../comps/TagsBar';
+import TagsBar from '../comps/nav/TagsBar';
 
 class HomeScreen extends Component {
     render () {
