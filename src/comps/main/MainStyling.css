@@ -71,9 +71,10 @@
   }
   
   .article-img {
-    width: 60%;
+    width: 50%;
     height: auto;
     margin: 15px 0 30px;
+    object-fit: contain;
   }
   
   .article-text { 
