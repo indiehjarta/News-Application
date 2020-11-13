@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-// imports outsiders
+import './NavStyling.css';
 
 //const tags = ['Global News', 'Local News', 'Business', 'Lifestyle', 'Sport', 'Weather'];
 // Check tabs in Material UI
