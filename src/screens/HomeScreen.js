@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 // imports components
 import Header from '../comps/header/Header';
+import NewsCard from '../comps/main/NewsCard';
 import TagsBar from '../comps/nav/TagsBar';
 
 class HomeScreen extends Component {
@@ -12,8 +13,9 @@ class HomeScreen extends Component {
                 <div className='bottom-header'>
                     <h1>The Newspaper</h1>
                 </div>
+                <TagsBar />
                 <main>
-                    <TagsBar />
+                    <NewsCard />
                 </main>
             </Fragment>
         );
