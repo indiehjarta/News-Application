@@ -2,8 +2,9 @@ import React, { Component, Fragment } from 'react';
 
 // imports components
 import Header from '../comps/header/Header';
-import NewsCard from '../comps/main/NewsCard';
 import TagsBar from '../comps/nav/TagsBar';
+import { NewsContextProvider } from '../NewsContext';
+import News from '../comps/main/News';
 
 class HomeScreen extends Component {
     render () {
@@ -15,7 +16,9 @@ class HomeScreen extends Component {
                 </div>
                 <TagsBar />
                 <main>
-                    <NewsCard />
+                    <NewsContextProvider>
+                        <News />
+                    </NewsContextProvider>
                 </main>
             </Fragment>
         );
