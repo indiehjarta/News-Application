@@ -14,7 +14,7 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: 100%;
   width: 260px;
   position: relative;
   top: 0;
@@ -23,6 +23,8 @@
     
 .card:hover {
   top: -10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.5);
+
 }
   
 article {
@@ -82,6 +84,7 @@ h3 {
 }
 
 .card-img {
+  height: 160px;
   background-size: cover;
   background-position: center center;
 }
@@ -97,6 +100,20 @@ h3 {
 
 .fa-angle-double-up {
   font-size: xx-large;
+}
+
+/* LOAD MORE BUTTON */
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.fa-angle-double-down {
+  font-size: 4em;
 }
 
 /*******************************************/

@@ -9,11 +9,12 @@ import ArticleScreen from './screens/ArticleScreen';
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/" component={HomeScreen} />
-      <Route path="/article" component={ArticleScreen} /> 
-      {/* <Route path="*" component={PageNotFoundScreen} /> */}
-    </Router>
+      <Router>
+        <Route exact path='/' component={HomeScreen} />
+        <Route path='/article' component={ArticleScreen} /> 
+        <Route path='/article:id' component={ArticleScreen} /> 
+        {/* <Route path="*" component={PageNotFoundScreen} /> */}
+      </Router>
   );
 }
 
