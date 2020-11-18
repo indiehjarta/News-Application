@@ -12,11 +12,13 @@ class Article extends Component {
         return (
             <div>
                 <div className='heading'>
-                    <div className='article-tags'>
-                        <div className='article-tag'>Business</div>
-                        <div className='article-tag'>Local</div>
+                    <div className='tags' style={{margin: '26px 0 10px'}}>
+                        <div className='tag business'>Business</div>
+                        <div className='tag local'>Local</div>
                     </div>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit in dignissim volutpat eleifend</h2>
+                    <h2 className='article-heading'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit in dignissim volutpat eleifend
+                    </h2>
                     <div className='author-description'>
                         <div className='author-img'>
                             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
@@ -68,7 +70,7 @@ class Article extends Component {
                         </p>
                     </div>
                 </div>
-                <hr className='bottom-hr'/>
+                <hr className='small-hr'/>
                 <Link to='/'>
                     <button className='back-btn' type='button'>
                         <i className="fas fa-chevron-left fa-3x" 
