@@ -15,7 +15,7 @@ function News () {
               ))
               : 'Loading'}
       </div>
-      <div className='loading'>
+      <div className='load-more'>
         <button>Load more</button>
         <i className="fas fa-angle-double-down"></i>
       </div>

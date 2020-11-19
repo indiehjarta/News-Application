@@ -3,9 +3,6 @@ import './MainStyling.css';
 import { Link } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 
-// imports test image
-import image from '../../image.jpg';
-
 class Article extends Component {
 
     render() {
@@ -32,7 +29,7 @@ class Article extends Component {
                 </div>
                 <div className='article'>
                     <div className='article-img'>
-                        <img src={image} alt=''></img>
+                        {/* IMG HERE */}
                     </div>
                     <div className='article-text'>
                         <p>
