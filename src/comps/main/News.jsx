@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from 'react';
 import { NewsContext } from '../../NewsContext';
 import NewsCard from './NewsCard';
 import './MainStyling.css';
+import Loading from '../Loading';
 
 function News () {
   const { data } = useContext(NewsContext);
@@ -13,7 +14,7 @@ function News () {
               ? data.articles.map((news) => (
                   <NewsCard data={news} key={news.url} />
               ))
-              : 'Loading'}
+              : <Loading />}
       </div>
       <div className='load-more'>
         <button>Load more</button>
