@@ -1,9 +1,11 @@
 .tags-bar-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
   
-.tag-btn {
+.tag-btn,
+.active {
     padding: 10px;
     width: 140px;
     font-family: 'Open Sans', sans-serif;
@@ -34,4 +36,9 @@
 .tag-btn > span:hover::before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.active {
+    background-color: #373737;
+    color: #fff;
 }
