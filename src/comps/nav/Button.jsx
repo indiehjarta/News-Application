@@ -14,7 +14,7 @@ class Button extends Component {
     };
   }
 
-  handleClick = () => {
+  handleClick = e => {
     this.setState({ 
       clicked: !this.state.clicked 
     }, () => { // Should prob use the callback that setState provides
@@ -27,7 +27,9 @@ class Button extends Component {
 
     return (
       <button className={tagsClass} onClick={this.handleClick}>
-          <span>{this.props.name}</span>
+          <span>
+            {this.props.name}
+          </span>
       </button>
     );
   }
