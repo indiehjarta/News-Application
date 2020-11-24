@@ -4,7 +4,7 @@
     align-items: center;
 }
   
-.tag-btn,
+.tagBtn,
 .active {
     padding: 10px;
     width: 140px;
@@ -16,11 +16,11 @@
 /* Vill att hela button ska ta del av hover och before effekten "data-attr"?*/
 /* Fixa också active  */
   
-.tag-btn > span {
+.tagBtn > span {
     position: relative;
 }
   
-.tag-btn > span::before {
+.tagBtn > span::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -33,7 +33,7 @@
     transition: all 0.3s ease-in-out 0s;
 }
   
-.tag-btn > span:hover::before {
+.tagBtn > span:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }

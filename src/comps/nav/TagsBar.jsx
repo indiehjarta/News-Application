@@ -3,17 +3,23 @@ import './NavStyling.css';
 import Button from './Button';
 
 class TagsBar extends Component {
-    render () {
-        return (
-            <nav>
-                <hr />
-                <div className='tags-bar-container'>
-                    <Button />
-                </div>
-                <hr />
-            </nav>
-        );
-    }
+
+  render() {
+    const tags= ['Global News', 'Local News', 'Business', 'Lifestyle', 'Sport', 'Weather'];
+
+    return (
+        <nav>
+            <hr />
+            <div className='tags-bar-container'>
+                {tags.map((tag) => (
+                    <Button 
+                    name={tag}/>
+                ))}
+            </div>
+            <hr />
+        </nav>
+    );
+  }
 }
 
 export default TagsBar;

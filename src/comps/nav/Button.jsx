@@ -3,54 +3,34 @@
  */
 
 import React, { Component } from 'react';
+import './NavStyling.css'
 
 class Button extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            tags: [
-                {id: 1, tagName: 'Global News'},
-                {id: 2, tagName: 'Local News'},
-                {id: 3, tagName: 'Business'},
-                {id: 4, tagName: 'Lifestyle'},
-                {id: 5, tagName: 'Sport'},
-                {id: 6, tagName: 'Weather'},
-            ]
-        };
-    }
+  constructor(props) {
+    super(props);
 
-    toggleActive = () => {
-        this.setState({
-            active: !this.state.active
-        })
+    this.state = {
+      clicked: false
     };
+  }
 
-    render() {
-        return (
-            <div>
-                <ul>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Global News</span></button>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Local News</span></button>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Business</span></button>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Lifestyle</span></button>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Sport</span></button>
-                  <button 
-                  className={this.state.active ? 'active' : 'tag-btn'} 
-                  onClick={this.toggleActive}><span>Weather</span></button>
-                </ul>
-            </div>
-        )
-    }
+  handleClick = () => {
+    this.setState({ 
+      clicked: !this.state.clicked 
+    }, () => { // Should prob use the callback that setState provides
+      if (this.props.onClick) this.props.onClick() 
+    });
+  };
+
+  render() {
+    let tagsClass = this.state.clicked ? "active" : "tagBtn";
+
+    return (
+      <button className={tagsClass} onClick={this.handleClick}>
+          <span>{this.props.name}</span>
+      </button>
+    );
+  }
 }
 
 export default Button;
