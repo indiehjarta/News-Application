@@ -13,7 +13,8 @@ class TagsBar extends Component {
             <div className='tags-bar-container'>
                 {tags.map((tag) => (
                     <Button 
-                    name={tag}/>
+                    name={tag}
+                    key={tag}/>
                 ))}
             </div>
             <hr />
