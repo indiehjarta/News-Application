@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './HeaderStyling.css';
 import DarkModeToggle from 'react-dark-mode-toggle';
 
 const SwitchMode = () => {
